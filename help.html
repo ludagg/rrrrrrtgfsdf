@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre d'aide - CamBus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bus"></i>
+                        <span>CamBus</span>
+                    </a>
+                    
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                        <a href="services.html" class="nav-link">Services à bord</a>
+                        <a href="about.html" class="nav-link">À propos</a>
+                        <a href="help.html" class="nav-link active">Aide</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="my-bookings.html" class="nav-action">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Mes réservations</span>
+                        </a>
+                        <a href="account.html" class="btn-account">
+                            <i class="fas fa-user"></i>
+                            <span>Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="help-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Comment pouvons-nous vous aider ?</h1>
+                <div class="help-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher dans l'aide...">
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="quick-links">
+                <h2>Liens rapides</h2>
+                <div class="quick-links-grid">
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>Comment réserver ?</h3>
+                        <p>Guide complet de réservation</p>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Modifier ma réservation</h3>
+                        <p>Changement de date ou d'heure</p>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-times-circle"></i>
+                        <h3>Annuler ma réservation</h3>
+                        <p>Politique d'annulation</p>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-euro-sign"></i>
+                        <h3>Remboursement</h3>
+                        <p>Demander un remboursement</p>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-suitcase"></i>
+                        <h3>Bagages</h3>
+                        <p>Politique des bagages</p>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Billet mobile</h3>
+                        <p>Utiliser mon billet numérique</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2>Questions fréquentes</h2>
+                
+                <div class="faq-categories">
+                    <button class="faq-category active" data-category="booking">Réservation</button>
+                    <button class="faq-category" data-category="payment">Paiement</button>
+                    <button class="faq-category" data-category="travel">Voyage</button>
+                    <button class="faq-category" data-category="account">Mon compte</button>
+                </div>
+
+                <div class="faq-content">
+                    <div class="faq-category-content active" id="booking">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Comment réserver un billet ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Pour réserver un billet, suivez ces étapes simples :</p>
+                                <ol>
+                                    <li>Saisissez votre ville de départ et d'arrivée</li>
+                                    <li>Choisissez votre date de voyage</li>
+                                    <li>Sélectionnez le nombre de passagers</li>
+                                    <li>Cliquez sur "Rechercher"</li>
+                                    <li>Choisissez votre trajet parmi les résultats</li>
+                                    <li>Complétez vos informations personnelles</li>
+                                    <li>Procédez au paiement sécurisé</li>
+                                    <li>Recevez votre billet par email instantanément</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Puis-je modifier ma réservation ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Oui, vous pouvez modifier votre réservation jusqu'à 30 minutes avant le départ. Les modifications sont gratuites si vous avez choisi l'option "Billet Flexible" lors de votre réservation, sinon des frais de 5€ s'appliquent.</p>
+                                <p>Pour modifier votre réservation, connectez-vous à votre compte et accédez à "Mes réservations".</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Comment annuler ma réservation ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Vous pouvez annuler votre réservation depuis votre compte dans la section "Mes réservations". Les conditions d'annulation dépendent du type de billet :</p>
+                                <ul>
+                                    <li><strong>Billet Standard :</strong> Remboursement à 50% jusqu'à 24h avant le départ</li>
+                                    <li><strong>Billet Flexible :</strong> Remboursement à 100% jusqu'à 1h avant le départ</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Combien de temps à l'avance dois-je réserver ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Vous pouvez réserver jusqu'à 30 minutes avant le départ, sous réserve de disponibilité. Cependant, nous recommandons de réserver le plus tôt possible pour bénéficier des meilleurs tarifs et garantir votre place.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category-content" id="payment">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Quels moyens de paiement acceptez-vous ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Nous acceptons les moyens de paiement suivants :</p>
+                                <ul>
+                                    <li>Cartes bancaires (Visa, Mastercard, American Express)</li>
+                                    <li>PayPal</li>
+                                    <li>Apple Pay</li>
+                                    <li>Google Pay</li>
+                                </ul>
+                                <p>Tous les paiements sont sécurisés et cryptés.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Le paiement est-il sécurisé ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolument ! Toutes les transactions sont sécurisées par cryptage SSL 256 bits. Nous ne conservons jamais vos informations bancaires complètes. Le paiement est traité par des prestataires certifiés PCI-DSS.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Puis-je obtenir une facture ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Oui, une facture est automatiquement générée et envoyée par email après chaque achat. Vous pouvez également la télécharger depuis votre compte dans la section "Mes réservations".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category-content" id="travel">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Que puis-je emporter comme bagages ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Chaque passager peut transporter gratuitement :</p>
+                                <ul>
+                                    <li>1 bagage en soute (max 20kg, dimensions max 80x50x30 cm)</li>
+                                    <li>1 bagage à main (max 7kg, dimensions max 42x30x18 cm)</li>
+                                </ul>
+                                <p>Des bagages supplémentaires peuvent être ajoutés pour 10€/bagage lors de la réservation.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Dois-je imprimer mon billet ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Non, ce n'est pas nécessaire ! Vous pouvez présenter votre billet numérique directement depuis votre smartphone. Téléchargez notre application ou gardez l'email de confirmation accessible.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Combien de temps avant le départ dois-je arriver ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Nous recommandons d'arriver au moins 15 minutes avant l'heure de départ prévue. Cela vous laisse le temps de trouver votre arrêt et d'embarquer tranquillement. Le bus ne peut pas attendre les retardataires.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Y a-t-il du WiFi dans le bus ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Oui ! Tous nos bus sont équipés de WiFi gratuit et illimité. Une fois à bord, connectez-vous au réseau "CamBus_WiFi" et profitez d'une connexion haut débit pendant tout votre voyage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category-content" id="account">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Dois-je créer un compte pour réserver ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Non, vous pouvez réserver en tant qu'invité. Cependant, créer un compte vous permet de :</p>
+                                <ul>
+                                    <li>Gérer toutes vos réservations en un seul endroit</li>
+                                    <li>Réserver plus rapidement avec vos informations sauvegardées</li>
+                                    <li>Recevoir des offres exclusives</li>
+                                    <li>Suivre l'historique de vos voyages</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>J'ai oublié mon mot de passe, que faire ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Cliquez sur "Mot de passe oublié ?" sur la page de connexion. Vous recevrez un email avec un lien pour réinitialiser votre mot de passe. Si vous ne recevez pas l'email, vérifiez vos spams.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Comment modifier mes informations personnelles ?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Connectez-vous à votre compte et accédez à la section "Paramètres" ou "Mon profil". Vous pourrez y modifier vos informations personnelles, votre email, numéro de téléphone et préférences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Vous ne trouvez pas votre réponse ?</h2>
+                <p>Notre équipe de support est disponible 24/7 pour vous aider</p>
+                
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Par téléphone</h3>
+                        <p>+33 1 23 45 67 89</p>
+                        <span>Disponible 24/7</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Par email</h3>
+                        <p>support@cambus.fr</p>
+                        <span>Réponse sous 24h</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Chat en direct</h3>
+                        <p>Discutez avec un agent</p>
+                        <button class="btn-chat">Démarrer le chat</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CamBus</h3>
+                    <p>Voyagez malin à travers l'Europe avec CamBus.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="search-results.html">Rechercher un trajet</a></li>
+                        <li><a href="destinations.html">Toutes les destinations</a></li>
+                        <li><a href="my-bookings.html">Mes réservations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Centre d'aide</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CamBus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/help.js"></script>
+</body>
+</html>
