@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Destinations - CamBus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/destinations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bus"></i>
+                        <span>CamBus</span>
+                    </a>
+                    
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <a href="destinations.html" class="nav-link active">Destinations</a>
+                        <a href="services.html" class="nav-link">Services à bord</a>
+                        <a href="about.html" class="nav-link">À propos</a>
+                        <a href="help.html" class="nav-link">Aide</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="my-bookings.html" class="nav-action">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Mes réservations</span>
+                        </a>
+                        <a href="account.html" class="btn-account">
+                            <i class="fas fa-user"></i>
+                            <span>Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="destinations-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Explorez nos destinations</h1>
+                <p>Plus de 400 destinations en France et en Europe</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="destinations-search">
+                <input type="text" placeholder="Rechercher une destination..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="country-tabs">
+                <button class="country-tab active" data-country="france">
+                    <span>🇫🇷</span>
+                    France
+                </button>
+                <button class="country-tab" data-country="belgium">
+                    <span>🇧🇪</span>
+                    Belgique
+                </button>
+                <button class="country-tab" data-country="germany">
+                    <span>🇩🇪</span>
+                    Allemagne
+                </button>
+                <button class="country-tab" data-country="spain">
+                    <span>🇪🇸</span>
+                    Espagne
+                </button>
+                <button class="country-tab" data-country="italy">
+                    <span>🇮🇹</span>
+                    Italie
+                </button>
+                <button class="country-tab" data-country="netherlands">
+                    <span>🇳🇱</span>
+                    Pays-Bas
+                </button>
+            </div>
+
+            <section class="country-content active" id="france">
+                <h2>Destinations en France</h2>
+                
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" alt="Paris">
+                        </div>
+                        <div class="city-info">
+                            <h3>Paris</h3>
+                            <p class="city-connections">120+ lignes</p>
+                            <p class="city-price">À partir de <strong>4,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?w=800" alt="Lyon">
+                        </div>
+                        <div class="city-info">
+                            <h3>Lyon</h3>
+                            <p class="city-connections">85+ lignes</p>
+                            <p class="city-price">À partir de <strong>9,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1508309597554-dc3f8d0b1b3f?w=800" alt="Marseille">
+                        </div>
+                        <div class="city-info">
+                            <h3>Marseille</h3>
+                            <p class="city-connections">72+ lignes</p>
+                            <p class="city-price">À partir de <strong>14,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?w=800" alt="Bordeaux">
+                        </div>
+                        <div class="city-info">
+                            <h3>Bordeaux</h3>
+                            <p class="city-connections">65+ lignes</p>
+                            <p class="city-price">À partir de <strong>12,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1583739523255-c4c87e99b27f?w=800" alt="Nice">
+                        </div>
+                        <div class="city-info">
+                            <h3>Nice</h3>
+                            <p class="city-connections">58+ lignes</p>
+                            <p class="city-price">À partir de <strong>19,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1555401218-7a5da63dc8e4?w=800" alt="Toulouse">
+                        </div>
+                        <div class="city-info">
+                            <h3>Toulouse</h3>
+                            <p class="city-connections">54+ lignes</p>
+                            <p class="city-price">À partir de <strong>11,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800" alt="Lille">
+                        </div>
+                        <div class="city-info">
+                            <h3>Lille</h3>
+                            <p class="city-connections">48+ lignes</p>
+                            <p class="city-price">À partir de <strong>15,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1581974206767-69b6bf0ccb71?w=800" alt="Strasbourg">
+                        </div>
+                        <div class="city-info">
+                            <h3>Strasbourg</h3>
+                            <p class="city-connections">42+ lignes</p>
+                            <p class="city-price">À partir de <strong>18,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1598894461933-00f54c1d3ebe?w=800" alt="Nantes">
+                        </div>
+                        <div class="city-info">
+                            <h3>Nantes</h3>
+                            <p class="city-connections">40+ lignes</p>
+                            <p class="city-price">À partir de <strong>16,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-content" id="belgium">
+                <h2>Destinations en Belgique</h2>
+                
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=800" alt="Bruxelles">
+                        </div>
+                        <div class="city-info">
+                            <h3>Bruxelles</h3>
+                            <p class="city-connections">45+ lignes</p>
+                            <p class="city-price">À partir de <strong>16,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1581446728009-6f8d91ad1734?w=800" alt="Bruges">
+                        </div>
+                        <div class="city-info">
+                            <h3>Bruges</h3>
+                            <p class="city-connections">28+ lignes</p>
+                            <p class="city-price">À partir de <strong>19,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1534430224-0df0adb1e8cc?w=800" alt="Anvers">
+                        </div>
+                        <div class="city-info">
+                            <h3>Anvers</h3>
+                            <p class="city-connections">32+ lignes</p>
+                            <p class="city-price">À partir de <strong>18,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-content" id="germany">
+                <h2>Destinations en Allemagne</h2>
+                
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800" alt="Berlin">
+                        </div>
+                        <div class="city-info">
+                            <h3>Berlin</h3>
+                            <p class="city-connections">65+ lignes</p>
+                            <p class="city-price">À partir de <strong>29,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1595867818082-083862f3d630?w=800" alt="Munich">
+                        </div>
+                        <div class="city-info">
+                            <h3>Munich</h3>
+                            <p class="city-connections">52+ lignes</p>
+                            <p class="city-price">À partir de <strong>32,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1547320540-23dc8a8c4e8c?w=800" alt="Francfort">
+                        </div>
+                        <div class="city-info">
+                            <h3>Francfort</h3>
+                            <p class="city-connections">48+ lignes</p>
+                            <p class="city-price">À partir de <strong>27,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-content" id="spain">
+                <h2>Destinations en Espagne</h2>
+                
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800" alt="Barcelone">
+                        </div>
+                        <div class="city-info">
+                            <h3>Barcelone</h3>
+                            <p class="city-connections">58+ lignes</p>
+                            <p class="city-price">À partir de <strong>35,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800" alt="Madrid">
+                        </div>
+                        <div class="city-info">
+                            <h3>Madrid</h3>
+                            <p class="city-connections">62+ lignes</p>
+                            <p class="city-price">À partir de <strong>42,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800" alt="Valence">
+                        </div>
+                        <div class="city-info">
+                            <h3>Valence</h3>
+                            <p class="city-connections">38+ lignes</p>
+                            <p class="city-price">À partir de <strong>38,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-content" id="italy">
+                <h2>Destinations en Italie</h2>
+                
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800" alt="Rome">
+                        </div>
+                        <div class="city-info">
+                            <h3>Rome</h3>
+                            <p class="city-connections">55+ lignes</p>
+                            <p class="city-price">À partir de <strong>45,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800" alt="Milan">
+                        </div>
+                        <div class="city-info">
+                            <h3>Milan</h3>
+                            <p class="city-connections">48+ lignes</p>
+                            <p class="city-price">À partir de <strong>32,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=800" alt="Florence">
+                        </div>
+                        <div class="city-info">
+                            <h3>Florence</h3>
+                            <p class="city-connections">42+ lignes</p>
+                            <p class="city-price">À partir de <strong>38,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-content" id="netherlands">
+                <h2>Destinations aux Pays-Bas</h2>
+                
+                <div class="cities-grid">
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800" alt="Amsterdam">
+                        </div>
+                        <div class="city-info">
+                            <h3>Amsterdam</h3>
+                            <p class="city-connections">52+ lignes</p>
+                            <p class="city-price">À partir de <strong>22,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1517038783014-22ad10d7e0c4?w=800" alt="Rotterdam">
+                        </div>
+                        <div class="city-info">
+                            <h3>Rotterdam</h3>
+                            <p class="city-connections">35+ lignes</p>
+                            <p class="city-price">À partir de <strong>20,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+
+                    <div class="city-card">
+                        <div class="city-image">
+                            <img src="https://images.unsplash.com/photo-1559564484-e48a63bbb1dd?w=800" alt="La Haye">
+                        </div>
+                        <div class="city-info">
+                            <h3>La Haye</h3>
+                            <p class="city-connections">30+ lignes</p>
+                            <p class="city-price">À partir de <strong>21,99€</strong></p>
+                            <a href="search-results.html" class="btn-city">Voir les trajets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CamBus</h3>
+                    <p>Voyagez malin à travers l'Europe avec CamBus.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="search-results.html">Rechercher un trajet</a></li>
+                        <li><a href="destinations.html">Toutes les destinations</a></li>
+                        <li><a href="my-bookings.html">Mes réservations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Centre d'aide</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CamBus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/destinations.js"></script>
+</body>
+</html>

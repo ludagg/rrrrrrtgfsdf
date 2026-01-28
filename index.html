@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamBus - Réservez vos billets de bus pas cher | Voyagez en bus en France et en Europe</title>
+    <meta name="description" content="Réservez vos billets de bus en ligne avec CamBus. Trouvez les meilleurs tarifs pour vos trajets en France et en Europe. Confort, ponctualité et prix imbattables.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bus"></i>
+                        <span>CamBus</span>
+                    </a>
+                    
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link active">Accueil</a>
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                        <a href="services.html" class="nav-link">Services à bord</a>
+                        <a href="about.html" class="nav-link">À propos</a>
+                        <a href="help.html" class="nav-link">Aide</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="my-bookings.html" class="nav-action">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Mes réservations</span>
+                        </a>
+                        <a href="account.html" class="btn-account">
+                            <i class="fas fa-user"></i>
+                            <span>Mon compte</span>
+                        </a>
+                        <button class="btn-language">
+                            <i class="fas fa-globe"></i>
+                            <span>FR</span>
+                        </button>
+                        <button class="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Voyagez malin, voyagez CamBus</h1>
+                    <p class="hero-subtitle">Découvrez l'Europe en bus à prix imbattable. Simple, confortable et écologique.</p>
+                    
+                    <div class="search-box">
+                        <div class="search-tabs">
+                            <button class="search-tab active">
+                                <i class="fas fa-bus"></i>
+                                <span>Rechercher un trajet</span>
+                            </button>
+                        </div>
+                        
+                        <form class="search-form">
+                            <div class="search-row">
+                                <div class="form-group location-group">
+                                    <label for="departure">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Départ
+                                    </label>
+                                    <input type="text" id="departure" placeholder="Paris, Lyon, Marseille..." autocomplete="off">
+                                </div>
+
+                                <button type="button" class="btn-swap" title="Inverser">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+
+                                <div class="form-group location-group">
+                                    <label for="arrival">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Arrivée
+                                    </label>
+                                    <input type="text" id="arrival" placeholder="Nice, Toulouse, Bordeaux..." autocomplete="off">
+                                </div>
+
+                                <div class="form-group date-group">
+                                    <label for="date-departure">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Date de départ
+                                    </label>
+                                    <input type="date" id="date-departure">
+                                </div>
+
+                                <div class="form-group date-group">
+                                    <label for="date-return">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Date de retour (optionnel)
+                                    </label>
+                                    <input type="date" id="date-return">
+                                </div>
+
+                                <div class="form-group passengers-group">
+                                    <label for="passengers">
+                                        <i class="fas fa-user"></i>
+                                        Passagers
+                                    </label>
+                                    <select id="passengers">
+                                        <option value="1">1 passager</option>
+                                        <option value="2">2 passagers</option>
+                                        <option value="3">3 passagers</option>
+                                        <option value="4">4 passagers</option>
+                                        <option value="5">5+ passagers</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-search">
+                                <i class="fas fa-search"></i>
+                                <span>Rechercher</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <h3>Prix imbattables</h3>
+                        <p>Voyagez à partir de 4,99€ avec les meilleures offres du marché</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>WiFi gratuit</h3>
+                        <p>Restez connecté pendant tout votre voyage avec notre WiFi haut débit</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Écologique</h3>
+                        <p>Réduisez votre empreinte carbone en choisissant le bus</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Billet mobile</h3>
+                        <p>Votre billet directement sur votre smartphone, simple et pratique</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-routes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos destinations les plus populaires</h2>
+                    <p>Découvrez nos trajets les plus demandés à prix réduits</p>
+                </div>
+
+                <div class="routes-grid">
+                    <a href="search-results.html" class="route-card">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" alt="Paris">
+                            <div class="route-overlay">
+                                <span class="route-price">À partir de 9,99€</span>
+                            </div>
+                        </div>
+                        <div class="route-info">
+                            <h3>Paris → Lyon</h3>
+                            <p><i class="fas fa-clock"></i> 5h30 environ</p>
+                        </div>
+                    </a>
+
+                    <a href="search-results.html" class="route-card">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1508309597554-dc3f8d0b1b3f?w=800" alt="Marseille">
+                            <div class="route-overlay">
+                                <span class="route-price">À partir de 14,99€</span>
+                            </div>
+                        </div>
+                        <div class="route-info">
+                            <h3>Paris → Marseille</h3>
+                            <p><i class="fas fa-clock"></i> 9h15 environ</p>
+                        </div>
+                    </a>
+
+                    <a href="search-results.html" class="route-card">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?w=800" alt="Bordeaux">
+                            <div class="route-overlay">
+                                <span class="route-price">À partir de 12,99€</span>
+                            </div>
+                        </div>
+                        <div class="route-info">
+                            <h3>Paris → Bordeaux</h3>
+                            <p><i class="fas fa-clock"></i> 7h45 environ</p>
+                        </div>
+                    </a>
+
+                    <a href="search-results.html" class="route-card">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1583739523255-c4c87e99b27f?w=800" alt="Nice">
+                            <div class="route-overlay">
+                                <span class="route-price">À partir de 19,99€</span>
+                            </div>
+                        </div>
+                        <div class="route-info">
+                            <h3>Paris → Nice</h3>
+                            <p><i class="fas fa-clock"></i> 11h30 environ</p>
+                        </div>
+                    </a>
+
+                    <a href="search-results.html" class="route-card">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?w=800" alt="Toulouse">
+                            <div class="route-overlay">
+                                <span class="route-price">À partir de 11,99€</span>
+                            </div>
+                        </div>
+                        <div class="route-info">
+                            <h3>Lyon → Toulouse</h3>
+                            <p><i class="fas fa-clock"></i> 6h20 environ</p>
+                        </div>
+                    </a>
+
+                    <a href="search-results.html" class="route-card">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=800" alt="Bruxelles">
+                            <div class="route-overlay">
+                                <span class="route-price">À partir de 16,99€</span>
+                            </div>
+                        </div>
+                        <div class="route-info">
+                            <h3>Paris → Bruxelles</h3>
+                            <p><i class="fas fa-clock"></i> 4h30 environ</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="section-footer">
+                    <a href="destinations.html" class="btn-secondary">
+                        Voir toutes les destinations
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-promotion">
+            <div class="container">
+                <div class="app-content">
+                    <div class="app-info">
+                        <h2>Téléchargez l'application CamBus</h2>
+                        <p>Réservez vos billets en quelques clics, recevez des alertes en temps réel et profitez d'offres exclusives.</p>
+                        
+                        <div class="app-features">
+                            <div class="app-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Réservation simplifiée</span>
+                            </div>
+                            <div class="app-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Suivi en temps réel</span>
+                            </div>
+                            <div class="app-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Offres exclusives</span>
+                            </div>
+                        </div>
+
+                        <div class="app-downloads">
+                            <a href="#" class="app-download">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <small>Télécharger sur</small>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="app-download">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <small>Télécharger sur</small>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="app-preview">
+                        <div class="app-mockup">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pourquoi choisir CamBus ?</h2>
+                    <p>Le meilleur choix pour vos voyages en bus</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-number">01</div>
+                        <h3>Confort optimal</h3>
+                        <p>Sièges inclinables, prises électriques et espace pour les jambes pour un voyage agréable</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-number">02</div>
+                        <h3>Ponctualité</h3>
+                        <p>96% de nos bus arrivent à l'heure grâce à notre système de gestion avancé</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-number">03</div>
+                        <h3>Réseau étendu</h3>
+                        <p>Plus de 400 destinations en France et en Europe avec des départs quotidiens</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-number">04</div>
+                        <h3>Service client</h3>
+                        <p>Une équipe disponible 24/7 pour répondre à toutes vos questions</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-number">05</div>
+                        <h3>Flexibilité</h3>
+                        <p>Modifiez ou annulez votre réservation facilement jusqu'à 30 minutes avant le départ</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-number">06</div>
+                        <h3>Sécurité</h3>
+                        <p>Chauffeurs expérimentés et bus entretenus régulièrement pour votre sécurité</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ce que disent nos voyageurs</h2>
+                    <p>Plus de 10 millions de passagers satisfaits</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Excellent rapport qualité-prix ! Le bus était confortable et ponctuel. Je recommande vivement CamBus pour les longs trajets."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <strong>Marie Dubois</strong>
+                                <span>Paris → Lyon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Le WiFi gratuit est un vrai plus ! J'ai pu travailler pendant tout le trajet. Service impeccable."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J</div>
+                            <div class="author-info">
+                                <strong>Jean Martin</strong>
+                                <span>Toulouse → Bordeaux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Application très intuitive et billets numériques pratiques. Plus besoin d'imprimer quoi que ce soit !"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <strong>Sophie Leclerc</strong>
+                                <span>Nice → Marseille</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-info">
+                        <h2>Inscrivez-vous à notre newsletter</h2>
+                        <p>Recevez nos meilleures offres et promotions directement dans votre boîte mail</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="btn-primary">
+                            S'inscrire
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CamBus</h3>
+                    <p>Voyagez malin à travers l'Europe avec CamBus. Confort, ponctualité et prix imbattables.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="search-results.html">Rechercher un trajet</a></li>
+                        <li><a href="destinations.html">Toutes les destinations</a></li>
+                        <li><a href="my-bookings.html">Mes réservations</a></li>
+                        <li><a href="services.html">Services à bord</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À propos de nous</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Centre d'aide</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CamBus. Tous droits réservés.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

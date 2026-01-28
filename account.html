@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon compte - CamBus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bus"></i>
+                        <span>CamBus</span>
+                    </a>
+                    
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                        <a href="services.html" class="nav-link">Services à bord</a>
+                        <a href="about.html" class="nav-link">À propos</a>
+                        <a href="help.html" class="nav-link">Aide</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="my-bookings.html" class="nav-action">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Mes réservations</span>
+                        </a>
+                        <a href="account.html" class="btn-account active">
+                            <i class="fas fa-user"></i>
+                            <span>Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="account-page">
+        <div class="container">
+            <div class="account-layout">
+                <aside class="account-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Jean Dupont</h3>
+                        <p>jean.dupont@email.com</p>
+                    </div>
+
+                    <nav class="account-nav">
+                        <button class="account-nav-item active" data-section="profile">
+                            <i class="fas fa-user"></i>
+                            <span>Profil</span>
+                        </button>
+                        <button class="account-nav-item" data-section="preferences">
+                            <i class="fas fa-cog"></i>
+                            <span>Préférences</span>
+                        </button>
+                        <button class="account-nav-item" data-section="payment">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Moyens de paiement</span>
+                        </button>
+                        <button class="account-nav-item" data-section="security">
+                            <i class="fas fa-lock"></i>
+                            <span>Sécurité</span>
+                        </button>
+                        <button class="account-nav-item logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Déconnexion</span>
+                        </button>
+                    </nav>
+                </aside>
+
+                <div class="account-content">
+                    <section class="account-section active" id="profile">
+                        <div class="section-header">
+                            <h2>Informations personnelles</h2>
+                            <p>Gérez vos informations personnelles</p>
+                        </div>
+
+                        <form class="account-form">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="firstName">Prénom</label>
+                                    <input type="text" id="firstName" value="Jean" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="lastName">Nom</label>
+                                    <input type="text" id="lastName" value="Dupont" required>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="jean.dupont@email.com" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" value="+33 6 12 34 56 78">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="birthdate">Date de naissance</label>
+                                <input type="date" id="birthdate" value="1990-05-15">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="address">Adresse</label>
+                                <input type="text" id="address" value="123 Rue de la République">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="city">Ville</label>
+                                    <input type="text" id="city" value="Paris">
+                                </div>
+                                <div class="form-field">
+                                    <label for="zipcode">Code postal</label>
+                                    <input type="text" id="zipcode" value="75001">
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn-cancel">Annuler</button>
+                                <button type="submit" class="btn-save">Enregistrer les modifications</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section class="account-section" id="preferences">
+                        <div class="section-header">
+                            <h2>Préférences</h2>
+                            <p>Personnalisez votre expérience CamBus</p>
+                        </div>
+
+                        <div class="preferences-list">
+                            <div class="preference-item">
+                                <div class="preference-info">
+                                    <h4>Langue</h4>
+                                    <p>Choisissez votre langue préférée</p>
+                                </div>
+                                <select class="preference-select">
+                                    <option value="fr" selected>Français</option>
+                                    <option value="en">English</option>
+                                    <option value="es">Español</option>
+                                    <option value="de">Deutsch</option>
+                                </select>
+                            </div>
+
+                            <div class="preference-item">
+                                <div class="preference-info">
+                                    <h4>Devise</h4>
+                                    <p>Devise d'affichage des prix</p>
+                                </div>
+                                <select class="preference-select">
+                                    <option value="eur" selected>EUR (€)</option>
+                                    <option value="usd">USD ($)</option>
+                                    <option value="gbp">GBP (£)</option>
+                                </select>
+                            </div>
+
+                            <div class="preference-item">
+                                <div class="preference-info">
+                                    <h4>Newsletters</h4>
+                                    <p>Recevez nos offres et actualités</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="preference-item">
+                                <div class="preference-info">
+                                    <h4>Notifications SMS</h4>
+                                    <p>Alertes et rappels par SMS</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+
+                            <div class="preference-item">
+                                <div class="preference-info">
+                                    <h4>Notifications push</h4>
+                                    <p>Notifications de l'application mobile</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="account-section" id="payment">
+                        <div class="section-header">
+                            <h2>Moyens de paiement</h2>
+                            <p>Gérez vos cartes bancaires enregistrées</p>
+                        </div>
+
+                        <div class="payment-methods">
+                            <div class="payment-card">
+                                <div class="card-icon">
+                                    <i class="fab fa-cc-visa"></i>
+                                </div>
+                                <div class="card-info">
+                                    <h4>Visa •••• 4242</h4>
+                                    <p>Expire le 12/2025</p>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn-card-action">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="payment-card">
+                                <div class="card-icon">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </div>
+                                <div class="card-info">
+                                    <h4>Mastercard •••• 5555</h4>
+                                    <p>Expire le 08/2024</p>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn-card-action">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="add-payment-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Ajouter une carte</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <section class="account-section" id="security">
+                        <div class="section-header">
+                            <h2>Sécurité</h2>
+                            <p>Gérez la sécurité de votre compte</p>
+                        </div>
+
+                        <form class="security-form">
+                            <div class="form-field">
+                                <label for="currentPassword">Mot de passe actuel</label>
+                                <input type="password" id="currentPassword" placeholder="••••••••">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="newPassword">Nouveau mot de passe</label>
+                                <input type="password" id="newPassword" placeholder="••••••••">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="confirmPassword">Confirmer le mot de passe</label>
+                                <input type="password" id="confirmPassword" placeholder="••••••••">
+                            </div>
+
+                            <div class="password-requirements">
+                                <h4>Le mot de passe doit contenir :</h4>
+                                <ul>
+                                    <li>Au moins 8 caractères</li>
+                                    <li>Au moins une lettre majuscule</li>
+                                    <li>Au moins un chiffre</li>
+                                    <li>Au moins un caractère spécial</li>
+                                </ul>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-save">Modifier le mot de passe</button>
+                            </div>
+                        </form>
+
+                        <div class="security-options">
+                            <div class="security-item">
+                                <div class="security-info">
+                                    <h4>Authentification à deux facteurs</h4>
+                                    <p>Ajoutez une couche de sécurité supplémentaire</p>
+                                </div>
+                                <button class="btn-enable">Activer</button>
+                            </div>
+                        </div>
+
+                        <div class="danger-zone">
+                            <h3>Zone dangereuse</h3>
+                            <div class="danger-item">
+                                <div>
+                                    <h4>Supprimer mon compte</h4>
+                                    <p>Cette action est irréversible</p>
+                                </div>
+                                <button class="btn-danger">Supprimer</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CamBus</h3>
+                    <p>Voyagez malin à travers l'Europe avec CamBus.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="search-results.html">Rechercher un trajet</a></li>
+                        <li><a href="destinations.html">Toutes les destinations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Centre d'aide</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CamBus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/account.js"></script>
+</body>
+</html>

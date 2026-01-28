@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - CamBus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bus"></i>
+                        <span>CamBus</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="booking-page">
+        <div class="container">
+            <div class="booking-progress">
+                <div class="progress-step active">
+                    <div class="step-number">1</div>
+                    <span>Informations</span>
+                </div>
+                <div class="progress-line active"></div>
+                <div class="progress-step">
+                    <div class="step-number">2</div>
+                    <span>Options</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="step-number">3</div>
+                    <span>Paiement</span>
+                </div>
+            </div>
+
+            <div class="booking-layout">
+                <div class="booking-main">
+                    <div class="booking-step active" id="step-1">
+                        <h2>Informations des passagers</h2>
+                        
+                        <div class="passenger-form">
+                            <h3>Passager 1</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Civilité *</label>
+                                    <select required>
+                                        <option>M.</option>
+                                        <option>Mme</option>
+                                        <option>Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Prénom *</label>
+                                    <input type="text" placeholder="Jean" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nom *</label>
+                                    <input type="text" placeholder="Dupont" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Email *</label>
+                                    <input type="email" placeholder="jean.dupont@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Téléphone *</label>
+                                    <input type="tel" placeholder="+33 6 12 34 56 78" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Date de naissance</label>
+                                <input type="date">
+                            </div>
+                        </div>
+
+                        <div class="special-requests">
+                            <h3>Demandes spéciales</h3>
+                            <label class="checkbox-option">
+                                <input type="checkbox">
+                                <div class="option-content">
+                                    <strong>Personne à mobilité réduite</strong>
+                                    <p>Assistance et place adaptée</p>
+                                </div>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox">
+                                <div class="option-content">
+                                    <strong>Voyageur avec animal</strong>
+                                    <p>Petit animal de compagnie accepté (sous conditions)</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="btn-next">
+                                Continuer
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="booking-step" id="step-2">
+                        <h2>Options supplémentaires</h2>
+                        
+                        <div class="options-list">
+                            <label class="option-card">
+                                <input type="checkbox" name="flexible">
+                                <div class="option-header">
+                                    <div class="option-info">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <div>
+                                            <strong>Billet flexible</strong>
+                                            <p>Modification gratuite jusqu'à 30 min avant le départ</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-price">+5,00€</div>
+                                </div>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="checkbox" name="premium-seat">
+                                <div class="option-header">
+                                    <div class="option-info">
+                                        <i class="fas fa-star"></i>
+                                        <div>
+                                            <strong>Siège premium</strong>
+                                            <p>Plus d'espace, table pliable et prises multiples</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-price">+8,00€</div>
+                                </div>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="checkbox" name="extra-bag">
+                                <div class="option-header">
+                                    <div class="option-info">
+                                        <i class="fas fa-suitcase-rolling"></i>
+                                        <div>
+                                            <strong>Bagage supplémentaire</strong>
+                                            <p>Bagage en soute de 20kg supplémentaire</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-price">+10,00€</div>
+                                </div>
+                            </label>
+
+                            <label class="option-card">
+                                <input type="checkbox" name="meal">
+                                <div class="option-header">
+                                    <div class="option-info">
+                                        <i class="fas fa-utensils"></i>
+                                        <div>
+                                            <strong>Menu à bord</strong>
+                                            <p>Sandwich, boisson et snack</p>
+                                        </div>
+                                    </div>
+                                    <div class="option-price">+12,00€</div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="btn-back">
+                                <i class="fas fa-arrow-left"></i>
+                                Retour
+                            </button>
+                            <button class="btn-next">
+                                Continuer
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="booking-step" id="step-3">
+                        <h2>Paiement</h2>
+                        
+                        <div class="payment-methods-selection">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="card" checked>
+                                <div class="method-content">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Carte bancaire</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="paypal">
+                                <div class="method-content">
+                                    <i class="fab fa-paypal"></i>
+                                    <span>PayPal</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="apple">
+                                <div class="method-content">
+                                    <i class="fab fa-apple-pay"></i>
+                                    <span>Apple Pay</span>
+                                </div>
+                            </label>
+
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="google">
+                                <div class="method-content">
+                                    <i class="fab fa-google-pay"></i>
+                                    <span>Google Pay</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="card-form">
+                            <div class="form-group">
+                                <label>Numéro de carte *</label>
+                                <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Date d'expiration *</label>
+                                    <input type="text" placeholder="MM/AA" maxlength="5" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV *</label>
+                                    <input type="text" placeholder="123" maxlength="3" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nom sur la carte *</label>
+                                <input type="text" placeholder="JEAN DUPONT" required>
+                            </div>
+                        </div>
+
+                        <div class="terms-agreement">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>J'accepte les <a href="#">conditions générales de vente</a> et la <a href="#">politique de confidentialité</a></span>
+                            </label>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="btn-back">
+                                <i class="fas fa-arrow-left"></i>
+                                Retour
+                            </button>
+                            <button class="btn-pay">
+                                <i class="fas fa-lock"></i>
+                                Payer 14,99€
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="booking-summary">
+                    <h3>Récapitulatif</h3>
+                    
+                    <div class="summary-trip">
+                        <h4>Paris → Lyon</h4>
+                        <p class="trip-date">Mercredi 28 Février 2024</p>
+                        
+                        <div class="trip-times">
+                            <div class="trip-time">
+                                <strong>08:30</strong>
+                                <span>Paris Bercy</span>
+                            </div>
+                            <div class="trip-duration">
+                                <i class="fas fa-arrow-right"></i>
+                                <span>5h30</span>
+                            </div>
+                            <div class="trip-time">
+                                <strong>14:00</strong>
+                                <span>Lyon Perrache</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="summary-details">
+                        <div class="detail-item">
+                            <span>1 Passager</span>
+                            <strong>14,99€</strong>
+                        </div>
+                        <div class="detail-item options">
+                            <!-- Options will be added here dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <strong class="total-amount">14,99€</strong>
+                    </div>
+
+                    <div class="summary-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>WiFi gratuit</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Prises électriques</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>1 bagage inclus</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modification possible</span>
+                        </div>
+                    </div>
+
+                    <div class="secure-payment">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Paiement 100% sécurisé</span>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>

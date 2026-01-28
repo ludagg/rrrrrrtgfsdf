@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes réservations - CamBus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my-bookings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bus"></i>
+                        <span>CamBus</span>
+                    </a>
+                    
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                        <a href="services.html" class="nav-link">Services à bord</a>
+                        <a href="about.html" class="nav-link">À propos</a>
+                        <a href="help.html" class="nav-link">Aide</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <a href="my-bookings.html" class="nav-action active">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Mes réservations</span>
+                        </a>
+                        <a href="account.html" class="btn-account">
+                            <i class="fas fa-user"></i>
+                            <span>Mon compte</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bookings-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Mes réservations</h1>
+                <p>Gérez et consultez toutes vos réservations</p>
+            </div>
+
+            <div class="bookings-tabs">
+                <button class="booking-tab active" data-tab="upcoming">
+                    <i class="fas fa-clock"></i>
+                    Voyages à venir
+                    <span class="tab-badge">2</span>
+                </button>
+                <button class="booking-tab" data-tab="past">
+                    <i class="fas fa-check"></i>
+                    Voyages passés
+                </button>
+                <button class="booking-tab" data-tab="cancelled">
+                    <i class="fas fa-times"></i>
+                    Annulés
+                </button>
+            </div>
+
+            <div class="bookings-content">
+                <div class="tab-content active" id="upcoming">
+                    <div class="booking-card">
+                        <div class="booking-status confirmed">
+                            <i class="fas fa-check-circle"></i>
+                            Confirmé
+                        </div>
+                        
+                        <div class="booking-header">
+                            <div class="booking-route">
+                                <h2>Paris → Lyon</h2>
+                                <p class="booking-date">Mercredi 28 Février 2024</p>
+                            </div>
+                            <div class="booking-reference">
+                                <span>Référence</span>
+                                <strong>#CAM-2024-001234</strong>
+                            </div>
+                        </div>
+
+                        <div class="booking-details">
+                            <div class="booking-time">
+                                <div class="time-point">
+                                    <strong>08:30</strong>
+                                    <span>Paris Bercy</span>
+                                    <small>123 Boulevard de Bercy, 75012 Paris</small>
+                                </div>
+                                <div class="time-line">
+                                    <i class="fas fa-bus"></i>
+                                    <span>5h30</span>
+                                </div>
+                                <div class="time-point">
+                                    <strong>14:00</strong>
+                                    <span>Lyon Perrache</span>
+                                    <small>14 Cours de Verdun, 69002 Lyon</small>
+                                </div>
+                            </div>
+
+                            <div class="booking-info">
+                                <div class="info-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>1 passager</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-suitcase"></i>
+                                    <span>1 bagage</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-chair"></i>
+                                    <span>Siège 24A</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-footer">
+                            <div class="booking-price">
+                                <span>Prix total</span>
+                                <strong>14,99€</strong>
+                            </div>
+                            <div class="booking-actions">
+                                <button class="btn-action secondary">
+                                    <i class="fas fa-download"></i>
+                                    Télécharger
+                                </button>
+                                <button class="btn-action secondary">
+                                    <i class="fas fa-edit"></i>
+                                    Modifier
+                                </button>
+                                <button class="btn-action danger">
+                                    <i class="fas fa-times"></i>
+                                    Annuler
+                                </button>
+                                <button class="btn-action primary">
+                                    <i class="fas fa-qrcode"></i>
+                                    Voir le billet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-card">
+                        <div class="booking-status confirmed">
+                            <i class="fas fa-check-circle"></i>
+                            Confirmé
+                        </div>
+                        
+                        <div class="booking-header">
+                            <div class="booking-route">
+                                <h2>Lyon → Paris</h2>
+                                <p class="booking-date">Dimanche 3 Mars 2024</p>
+                            </div>
+                            <div class="booking-reference">
+                                <span>Référence</span>
+                                <strong>#CAM-2024-001235</strong>
+                            </div>
+                        </div>
+
+                        <div class="booking-details">
+                            <div class="booking-time">
+                                <div class="time-point">
+                                    <strong>16:00</strong>
+                                    <span>Lyon Part-Dieu</span>
+                                    <small>21 Boulevard Vivier Merle, 69003 Lyon</small>
+                                </div>
+                                <div class="time-line">
+                                    <i class="fas fa-bus"></i>
+                                    <span>5h20</span>
+                                </div>
+                                <div class="time-point">
+                                    <strong>21:20</strong>
+                                    <span>Paris Bercy</span>
+                                    <small>123 Boulevard de Bercy, 75012 Paris</small>
+                                </div>
+                            </div>
+
+                            <div class="booking-info">
+                                <div class="info-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>1 passager</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-suitcase"></i>
+                                    <span>1 bagage</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-chair"></i>
+                                    <span>Siège 12B</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-footer">
+                            <div class="booking-price">
+                                <span>Prix total</span>
+                                <strong>16,99€</strong>
+                            </div>
+                            <div class="booking-actions">
+                                <button class="btn-action secondary">
+                                    <i class="fas fa-download"></i>
+                                    Télécharger
+                                </button>
+                                <button class="btn-action secondary">
+                                    <i class="fas fa-edit"></i>
+                                    Modifier
+                                </button>
+                                <button class="btn-action danger">
+                                    <i class="fas fa-times"></i>
+                                    Annuler
+                                </button>
+                                <button class="btn-action primary">
+                                    <i class="fas fa-qrcode"></i>
+                                    Voir le billet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="past">
+                    <div class="booking-card">
+                        <div class="booking-status completed">
+                            <i class="fas fa-check-circle"></i>
+                            Terminé
+                        </div>
+                        
+                        <div class="booking-header">
+                            <div class="booking-route">
+                                <h2>Paris → Bordeaux</h2>
+                                <p class="booking-date">Lundi 15 Janvier 2024</p>
+                            </div>
+                            <div class="booking-reference">
+                                <span>Référence</span>
+                                <strong>#CAM-2024-000892</strong>
+                            </div>
+                        </div>
+
+                        <div class="booking-details">
+                            <div class="booking-time">
+                                <div class="time-point">
+                                    <strong>09:00</strong>
+                                    <span>Paris Bercy</span>
+                                </div>
+                                <div class="time-line">
+                                    <i class="fas fa-bus"></i>
+                                    <span>7h45</span>
+                                </div>
+                                <div class="time-point">
+                                    <strong>16:45</strong>
+                                    <span>Bordeaux Gare Saint-Jean</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-footer">
+                            <div class="booking-price">
+                                <span>Prix total</span>
+                                <strong>12,99€</strong>
+                            </div>
+                            <div class="booking-actions">
+                                <button class="btn-action secondary">
+                                    <i class="fas fa-download"></i>
+                                    Télécharger la facture
+                                </button>
+                                <button class="btn-action primary">
+                                    <i class="fas fa-redo"></i>
+                                    Réserver à nouveau
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="empty-state">
+                        <i class="fas fa-bus"></i>
+                        <h3>C'est tout pour le moment</h3>
+                        <p>Vous n'avez pas d'autres voyages passés</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="cancelled">
+                    <div class="empty-state">
+                        <i class="fas fa-smile"></i>
+                        <h3>Aucune réservation annulée</h3>
+                        <p>Vous n'avez aucune réservation annulée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CamBus</h3>
+                    <p>Voyagez malin à travers l'Europe avec CamBus.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="search-results.html">Rechercher un trajet</a></li>
+                        <li><a href="destinations.html">Toutes les destinations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help.html">Centre d'aide</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CamBus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/my-bookings.js"></script>
+</body>
+</html>
